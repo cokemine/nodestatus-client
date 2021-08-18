@@ -6,10 +6,12 @@ The client of NodeStatus written in TypeScript
 
 1、Install Node.js first
 
+2、Install NodeStatus-client
 ```shell
 npm i pm2 nodestatus-client -g
-status-client -dsn="ws://username:password@localhost"
-# pm2 start status-client 
+status-client -dsn "ws://username:password@localhost"
+pm2 status # check running status
+pm2 log nodestatus-client # check logs
 ```
 
 ## Usage
