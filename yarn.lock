@@ -1012,6 +1012,11 @@
   resolved "https://registry.nlark.com/@leichtgewicht/ip-codec/download/@leichtgewicht/ip-codec-2.0.3.tgz"
   integrity sha1-AwCUN3DgQjEEGlG9OfBDm1x6tPA=
 
+"@msgpack/msgpack@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.nlark.com/@msgpack/msgpack/download/@msgpack/msgpack-2.7.0.tgz#3a0fbe4e0406f6576895f990857e19da97376f18"
+  integrity sha1-Og++TgQG9ldolfmQhX4Z2pc3bxg=
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.nlark.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz"
@@ -1260,13 +1265,6 @@
   version "3.1.2"
   resolved "https://registry.nlark.com/@types/keyv/download/@types/keyv-3.1.2.tgz"
   integrity sha1-XZe7ZVJsILbghF9rDSreTyhgTuU=
-  dependencies:
-    "@types/node" "*"
-
-"@types/msgpack-lite@^0.1.7":
-  version "0.1.8"
-  resolved "https://registry.nlark.com/@types/msgpack-lite/download/@types/msgpack-lite-0.1.8.tgz"
-  integrity sha1-Ay8ZYJ5jU7ZfKJjRNeH2HjqosQI=
   dependencies:
     "@types/node" "*"
 
@@ -2542,11 +2540,6 @@ esutils@^2.0.2:
   resolved "https://registry.npm.taobao.org/esutils/download/esutils-2.0.3.tgz"
   integrity sha1-dNLrTeC42hKTcRkQ1Qd1ubcQ72Q=
 
-event-lite@^0.1.1:
-  version "0.1.2"
-  resolved "https://registry.npm.taobao.org/event-lite/download/event-lite-0.1.2.tgz"
-  integrity sha1-g4o+D93e+MyQ8SgAbI5VpOTkwRs=
-
 eventemitter2@5.0.1, eventemitter2@~5.0.1:
   version "5.0.1"
   resolved "https://registry.npm.taobao.org/eventemitter2/download/eventemitter2-5.0.1.tgz?cache=0&sync_timestamp=1614193216055&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feventemitter2%2Fdownload%2Feventemitter2-5.0.1.tgz#6197a095d5fb6b57e8942f6fd7eaad63a09c9452"
@@ -2998,11 +2991,6 @@ icss-utils@^5.0.0:
   resolved "https://registry.nlark.com/icss-utils/download/icss-utils-5.1.0.tgz#c6be6858abd013d768e98366ae47e25d5887b1ae"
   integrity sha1-xr5oWKvQE9do6YNmrkfiXViHsa4=
 
-ieee754@^1.1.8:
-  version "1.2.1"
-  resolved "https://registry.nlark.com/ieee754/download/ieee754-1.2.1.tgz"
-  integrity sha1-jrehCmP/8l0VpXsAFYbRd9Gw01I=
-
 ignore-by-default@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/ignore-by-default/download/ignore-by-default-1.0.1.tgz"
@@ -3077,11 +3065,6 @@ ini@^1.3.5, ini@~1.3.0:
   version "1.3.8"
   resolved "https://registry.nlark.com/ini/download/ini-1.3.8.tgz"
   integrity sha1-op2kJbSIBvNHZ6Tvzjlyaa8oQyw=
-
-int64-buffer@^0.1.9:
-  version "0.1.10"
-  resolved "https://registry.nlark.com/int64-buffer/download/int64-buffer-0.1.10.tgz"
-  integrity sha1-J3siiofZWtd30HwTgyAiQGpHNCM=
 
 ip-regex@^4.0.0:
   version "4.3.0"
@@ -3222,11 +3205,6 @@ isarray@0.0.1:
   version "0.0.1"
   resolved "https://registry.npm.taobao.org/isarray/download/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
   integrity sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
-
-isarray@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.nlark.com/isarray/download/isarray-1.0.0.tgz"
-  integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -3645,16 +3623,6 @@ ms@^2.1.1:
   version "2.1.3"
   resolved "https://registry.npm.taobao.org/ms/download/ms-2.1.3.tgz?cache=0&sync_timestamp=1607433912031&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fms%2Fdownload%2Fms-2.1.3.tgz"
   integrity sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=
-
-msgpack-lite@^0.1.26:
-  version "0.1.26"
-  resolved "https://registry.npm.taobao.org/msgpack-lite/download/msgpack-lite-0.1.26.tgz"
-  integrity sha1-3TxQsm8FnyXn7e42REGDWOKprYk=
-  dependencies:
-    event-lite "^0.1.1"
-    ieee754 "^1.1.8"
-    int64-buffer "^0.1.9"
-    isarray "^1.0.0"
 
 mute-stream@~0.0.4:
   version "0.0.8"

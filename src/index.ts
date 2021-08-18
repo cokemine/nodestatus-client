@@ -1,6 +1,6 @@
 import { URL } from 'url';
 import WebSocket from 'ws';
-import msgpack from 'msgpack-lite';
+import { encode } from '@msgpack/msgpack';
 import { getLogger, configure } from 'log4js';
 import { program } from 'commander';
 import getStatus from './utils';
@@ -71,7 +71,7 @@ function connect() {
       if (!msg.includes('Authentication required')) return;
       logger.info(msg);
       socket.send(
-        msgpack.encode({
+        encode({
           username,
           password
         })
@@ -89,7 +89,7 @@ function connect() {
           const ip = msg.includes('IPv4') ? 6 : 4;
           while (socket.readyState == 1) {
             const [data] = await Promise.all([getStatus(ip), new Promise(resolve => setTimeout(resolve, interval))]);
-            socket.send(msgpack.encode(data));
+            socket.send(encode(data));
           }
           return socket.close();
         });

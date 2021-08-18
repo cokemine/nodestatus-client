@@ -24,12 +24,10 @@
   "author": "Kagurazaka Mizuki",
   "license": "MIT",
   "dependencies": {
-    "msgpack-lite": "^0.1.26",
-    "pm2": "^5.1.0",
     "systeminformation": "^5.6.8"
   },
   "devDependencies": {
-    "@types/msgpack-lite": "^0.1.7",
+    "@msgpack/msgpack": "^2.7.0",
     "@types/ws": "^7.4.7",
     "@typescript-eslint/eslint-plugin": "^4.14.1",
     "@typescript-eslint/parser": "^4.14.1",
