@@ -54,6 +54,7 @@ if (!username || !password) {
 let id: NodeJS.Timeout;
 
 function connect() {
+  id && clearTimeout(id);
   const socket = new WebSocket(`${ server }/connect`);
 
   socket.on('close', () => {
@@ -64,8 +65,6 @@ function connect() {
   socket.on('error', () => socket.close());
 
   socket.on('open', () => {
-    id && clearTimeout(id);
-
     socket.once('message', buf => {
       const msg = buf.toString();
       if (!msg.includes('Authentication required')) return;
