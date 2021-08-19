@@ -8,7 +8,8 @@
     "bin"
   ],
   "bin": {
-    "status-client": "./bin/status-client.js"
+    "status-client": "./bin/status-client.js",
+    "status-client-run": "./bin/status-client-run.js"
   },
   "repository": {
     "type": "git",
