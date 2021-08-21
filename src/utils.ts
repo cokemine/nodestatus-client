@@ -33,9 +33,9 @@ class Status {
   }
 
   async getMemory() {
-    const { total, used, swaptotal, swapused } = await si.mem();
+    const { total, active, swaptotal, swapused } = await si.mem();
     this.memory_total = total / 1024;
-    this.memory_used = used / 1024;
+    this.memory_used = active / 1024;
     this.swap_total = swaptotal / 1024;
     this.swap_used = swapused / 1024;
   }
